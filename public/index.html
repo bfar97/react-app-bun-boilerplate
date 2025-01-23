@@ -3,22 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React Bun App</title>
-    <script>
-      // Simple live reload
-      let lastModified = '';
-      setInterval(async () => {
-        const response = await fetch('bundle.js', { method: 'HEAD' });
-        const currentModified = response.headers.get('last-modified');
-        if (lastModified && lastModified !== currentModified) {
-          location.reload();
-        }
-        lastModified = currentModified;
-      }, 1000);
-    </script>
+    <title>React App</title>
   </head>
   <body>
     <div id="root"></div>
     <script src="bundle.js"></script>
   </body>
-</html>
+</html> 
